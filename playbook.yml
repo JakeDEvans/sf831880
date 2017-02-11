@@ -1,0 +1,28 @@
+---
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  pre_tasks:
+    - debug:
+        msg: "Play 1"
+
+  roles:
+    - role1
+    - role2
+  tasks:
+    - debug:
+        msg: "This is a task in a play"
+
+- hosts: localhost
+  gather_facts: no
+  connection: local
+  pre_tasks:
+    - debug:
+        msg: "Play 2"
+  roles:
+    - role1
+    - role2
+  tasks:
+    - debug:
+        msg: "This is a task in a play"
+...

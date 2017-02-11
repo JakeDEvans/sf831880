@@ -1,0 +1,5 @@
+---
+- name: Always true in role2
+  command: echo role2
+  notify: handler
+

@@ -1,0 +1,5 @@
+---
+- name: handler
+  debug:
+    msg: "This is a handler in role2"
+
