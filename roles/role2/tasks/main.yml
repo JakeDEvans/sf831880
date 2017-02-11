@@ -1,4 +1,8 @@
 ---
+- name: Run if change in task c of role 1
+  command: echo taskc changed, restart process
+  when: taskc.changed
+
 - name: Always true in role2
   command: echo role2
   notify: handler

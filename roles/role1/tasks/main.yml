@@ -15,6 +15,3 @@
 - name: Always true in role1
   command: echo role1 e
   notify: handler
-- name: Run if change
-  command: echo taskc changed, restart process
-  when: taskc.changed
